@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Mario Muratori | CV</title>
+    <meta name="description" content="Pagina web personal."/>
+  </head>
+ <body>
+<nav id="overlay">
+   <img src="images/cierre.svg" class="cierre-btn" id="cierre-menu">
+   <div class="fullscreen-bg">
+      <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bgvideo">
+          <source src="video/work.webm" type="video/webm">
+          <source src="video/work.mp4" type="video/mp4">
+          <source src="video/work.ogv" type="video/ogg">
+      </video>
+  </div>
+    <ul>
+        <li>
+          <a href="https://mariomuratori.github.io/">inicio</a>
+          <span>¡regresá a la página principal!</span>
+        </li>
+        <li>
+            <a href="#">nosotros</a>
+            <span>¿quiénes somos?</span>
+          </li>
+          <li>
+              <a href="#">servicios</a>
+              <span>¿qué hacemos por vos?</span>
+            </li>
+            <li>
+                <a href="#">contacto</a>
+                <span>¡hablemos!</span>
+              </li>
+      </ul>
+  </nav>
+
+<header>
+  <a href="#" class="logo">Mario</a>
+  <img src="images/menu.svg" class="menu-btn" id="open-menu">
+</header>
+
+ <section>
+   <h1><center>hola</center></h1>
+ </section>
+
+ <script>
+ 
+  var overlay = document.getElementById('overlay');
+  var closeMenu = document.getElementById('cierre-menu');
+
+  document.getElementById('open-menu').addEventListener('click', function() {
+    overlay.classList.add('show-menu');
+  });
+
+  document.getElementById('cierre-menu').addEventListener('click', function() {
+    overlay.classList.remove('show-menu');
+  });
+
+ </script>
+
+    </body>
+</html>
